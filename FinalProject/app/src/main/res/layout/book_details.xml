@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp"
+        android:text="도서 정보"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <!-- 도서 이미지 -->
+    <ImageView
+        android:id="@+id/dialogBookImage"
+        android:layout_marginTop="20dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 제목 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="책 제목: "
+            android:textStyle="bold"
+            android:gravity="end"
+            android:paddingEnd="8dp" />
+
+        <TextView
+            android:id="@+id/dialogBookTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:text="돈의속성"
+            android:textSize="16dp"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <!-- 저자 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="저자: "
+            android:textStyle="bold"
+            android:gravity="end"
+            android:paddingEnd="8dp" />
+
+        <TextView
+            android:id="@+id/dialogBookAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:text="김승호"
+            android:textSize="16dp"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <!-- 독서량 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="독서량(p): "
+            android:textStyle="bold"
+            android:gravity="end"
+            android:paddingEnd="8dp"/>
+
+        <TextView
+            android:id="@+id/dialogReadingProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:text="85"
+            android:textSize="16dp"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <!-- 별점 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="나의 별점: "
+            android:textStyle="bold"
+            android:gravity="end"
+            android:paddingEnd="8dp"/>
+
+        <RatingBar
+            android:id="@+id/dialogRatingBar"
+            style="?android:attr/ratingBarStyleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rating="3.5" />
+    </LinearLayout>
+
+    <!-- 원형 ProgressBar -->
+    <FrameLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp">
+
+        <!-- 원형 ProgressBar -->
+        <ProgressBar
+            android:id="@+id/dialogProgressBar"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:indeterminateOnly="false"
+            android:max="100"
+            android:progress="75"
+            android:progressDrawable="@drawable/circle_progress_bar"
+            android:layout_gravity="center" />
+
+        <!-- 중앙의 텍스트 -->
+        <TextView
+            android:id="@+id/progressPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="75%"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+</LinearLayout>

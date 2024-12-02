@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/appNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Bookshelf App"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <!--3x3 이미지뷰-->
+    <GridLayout
+        android:id="@+id/bookGridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:alignmentMode="alignMargins"
+        android:useDefaultMargins="true">
+
+        <ImageView
+            android:id="@+id/bookImage1"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/gray_background"
+            android:contentDescription="Book Image 1"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/bookImage2"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/gray_background"
+            android:contentDescription="Book Image 2"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/bookImage3"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:src="@drawable/gray_background"
+            android:contentDescription="Book Image 3"
+            android:scaleType="centerCrop" />
+
+
+        <ImageView
+            android:id="@+id/bookImage4"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/gray_background"
+            android:contentDescription="Book Image 4"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/bookImage5"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/gray_background"
+            android:contentDescription="Book Image 5"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/bookImage6"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:src="@drawable/gray_background"
+            android:contentDescription="Book Image 6"
+            android:scaleType="centerCrop" />
+
+
+        <ImageView
+            android:id="@+id/bookImage7"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/gray_background"
+            android:contentDescription="Book Image 7"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/bookImage8"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/gray_background"
+            android:contentDescription="Book Image 8"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/bookImage9"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:src="@drawable/gray_background"
+            android:contentDescription="Book Image 9"
+            android:scaleType="centerCrop" />
+    </GridLayout>
+
+    <!-- 설명 텍스트뷰 -->
+    <TextView
+        android:id="@+id/bookDescriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="도서 추가 후, 표지를 눌러 도서 정보를 확인하세요!"
+        android:textSize="18sp"
+        android:textColor="#595959"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"/>
+
+    <!-- 버튼 -->
+    <Button
+        android:id="@+id/addBookButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="도서 추가"
+        android:backgroundTint="@color/buttonColor"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"/>
+</LinearLayout>

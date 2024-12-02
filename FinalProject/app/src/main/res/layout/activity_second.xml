@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/appNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="도서 추가"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- 도서 이미지 추가 버튼 -->
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- 책 이미지 -->
+            <ImageView
+                android:id="@+id/bookImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:src="@drawable/gray_background"
+                android:contentDescription="Book Image"
+                android:scaleType="centerCrop"/>
+
+            <!-- + 버튼 (이미지뷰 가운데 배치) -->
+            <Button
+                android:id="@+id/addImageButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="+"
+                android:textSize="36sp"
+                android:textColor="#ffffff"
+                android:background="@drawable/circular_button"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <!-- 책 제목 입력 -->
+
+        <TextView
+            android:id="@+id/bookTitleLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="제목"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/bookTitleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="제목을 입력하세요"
+            android:textSize="12sp"
+            android:layout_marginBottom="10dp"
+            android:inputType="text" />
+
+
+        <!-- 저자 입력 -->
+        <TextView
+            android:id="@+id/bookAuthorLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="저자"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/bookAuthorEditText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="저자를 입력하세요"
+            android:textSize="12sp"
+            android:layout_marginBottom="10dp"
+            android:inputType="text" />
+
+
+        <!-- 총 페이지 수 입력 -->
+        <TextView
+            android:id="@+id/totalPagesLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="총 페이지"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/totalPagesEditText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="총 페이지 수를 입력하세요"
+            android:textSize="12sp"
+            android:layout_marginBottom="10dp"
+            android:inputType="number" />
+
+        <!-- 읽은 분량 입력 -->
+        <TextView
+            android:id="@+id/readPagesLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="읽은 분량"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/pagesReadEditText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="읽은 분량을 입력하세요"
+            android:textSize="12sp"
+            android:layout_marginBottom="16dp"
+            android:inputType="number" />
+
+        <!-- 별점 입력 -->
+        <TextView
+            android:id="@+id/ratingLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="별점"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="2dp"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:isIndicator="false"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 돌아가기 버튼 -->
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="돌아가기"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/buttonColor"/>
+    </LinearLayout>
+</LinearLayout>

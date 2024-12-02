@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/gray_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#D3D3D3"/> <!-- 회색 색상 -->
+    <corners android:radius="4dp"/> <!-- 둥근 모서리 설정 (선택 사항) -->
+</shape>
